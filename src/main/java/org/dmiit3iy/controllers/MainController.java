@@ -42,11 +42,6 @@ public class MainController {
     @FXML
     private javafx.scene.control.Button closeButton;
 
-
-
-
-
-
     @FXML
     public void addEmailButton(ActionEvent actionEvent) {
         String email = emailTextField.getText();
@@ -78,6 +73,7 @@ public class MainController {
 
 
     public void clearEmailsButton(ActionEvent actionEvent) {
+        listViewEmails.getItems().clear();
     }
 
     private javafx.event.EventHandler<WindowEvent> closeEventHandler = new javafx.event.EventHandler<WindowEvent>() {
